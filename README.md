@@ -30,4 +30,7 @@ CipherNest is a hands-on IoT security assessment project that focuses on **analy
 - JSON (data storage)
 
 ---
+## 📊 Dashboard
 
+
+![Screenshot_4-8-2025_14632_127 0 0 1](https://github.com/user-attachments/assets/74127465-91c4-4a5c-9b05-8dc7647d1da7)
