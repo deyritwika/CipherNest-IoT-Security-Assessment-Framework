@@ -32,18 +32,3 @@ This project replicates a real-world security workflow—network reconnaissance,
 
 ---
 
-## 📂 Project Structure
-CipherNest/
-│
-├── README.md # Project documentation
-├── device_data.json # Masked sample data
-├── dashboard.py # Dashboard code
-├── requirements.txt # Python dependencies
-├── captures/ # Redacted captures (Wireshark, dashboard, reports)
-│ ├── dashboard.png
-│ ├── tls_handshake.png
-└── reports/ # Daily reports and findings
-├── day1.md
-├── day2.md
-├── day3.md
-└── final_report.md
