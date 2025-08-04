@@ -1,0 +1,111 @@
+{
+  "project_name": "CipherNest",
+  "network": "10.0.0.0/x",
+  "devices": [
+    {
+      "device_name": "Google Home",
+      "ip": "10.0.x.x",
+      "mac_vendor": "Google LLC",
+      "os": "Google Embedded OS",
+      "Connectivity": "Wi-Fi",
+      "risk_score": 12,
+      "open_ports": [
+        {"port": 80, "service": "http", "status": "open"},
+        {"port": 443, "service": "https", "status": "open"},
+        {"port": 8009, "service": "proprietary", "status": "open"},
+        {"port": 9000, "service": "unknown", "status": "filtered"}
+      ],
+      "encryption": {
+        "protocol": "TLS 1.3",
+        "lan": "Secure",
+        "cloud": "Secure"
+      },
+      "firewall": "Active",
+      "vulnerabilities": [],
+      "mdns_services": ["_googlecast._tcp.local"],
+      "tls_analysis": {
+        "handshake": "TLS 1.3 verified",
+        "sni": "Valid Google endpoint",
+        "lan_communication": "Encrypted",
+        "cloud_communication": "Persistent secure session"
+      }
+    },
+    {
+      "device_name": "Alexa Echo Dot",
+      "ip": "10.0.x.y",
+      "mac_vendor": "Amazon Technologies Inc.",
+      "os": "Fire OS (Amazon Embedded)",
+      "Connectivity": "Wi-Fi",
+      "risk_score": "To be harnessed",
+      "open_ports": [
+        {"port": 443, "service": "https", "status": "open"},
+        {"port": 554, "service": "rtsp", "status": "filtered"},
+        {"port": 40317, "service": "alexa-voice", "status": "open"}
+      ],
+      "encryption": {
+        "protocol": "TLS 1.2",
+        "lan": "Unknown",
+        "cloud": "Secure"
+      },
+      "firewall": "Active",
+      "vulnerabilities": ["Pending scan"],
+      "mdns_services": ["_alexa._tcp.local"],
+      "tls_analysis": {
+        "handshake": "Pending inspection",
+        "sni": "Suspected Amazon endpoint",
+        "lan_communication": "Unknown",
+        "cloud_communication": "Encrypted with persistent session"
+      }
+    },
+    {
+      "device_name": "GE Smart Bulb",
+      "ip": "10.0.x.z",
+      "mac_vendor": "GE Lighting",
+      "os": "Custom IoT Firmware",
+      "Connectivity": "Zigbee",
+      "risk_score": "To be harnessed",
+      "open_ports": [],
+      "encryption": {
+        "protocol": "AES 128-bit (Zigbee)",
+        "lan": "Encrypted",
+        "cloud": "Unknown"
+      },
+      "firewall": "None (low-resource)",
+      "vulnerabilities": ["To be assessed"],
+      "mdns_services": [],
+      "tls_analysis": {
+        "handshake": "Not applicable",
+        "sni": "Not applicable",
+        "lan_communication": "Encrypted via Zigbee",
+        "cloud_communication": "Unknown"
+      }
+    },
+    {
+      "device_name": "Google Home Speaker",
+      "ip": "10.0.x.w",
+      "mac_vendor": "Google LLC",
+      "os": "Google Embedded OS",
+      "Connectivity": "Wi-Fi",
+      "risk_score": "To be harnessed",
+      "open_ports": [
+        {"port": 80, "service": "http", "status": "open"},
+        {"port": 443, "service": "https", "status": "open"},
+        {"port": 8009, "service": "proprietary", "status": "open"}
+      ],
+      "encryption": {
+        "protocol": "TLS 1.3",
+        "lan": "Secure",
+        "cloud": "Secure"
+      },
+      "firewall": "Active",
+      "vulnerabilities": [],
+      "mdns_services": ["_googlecast._tcp.local"],
+      "tls_analysis": {
+        "handshake": "TLS 1.3 verified",
+        "sni": "Valid Google endpoint",
+        "lan_communication": "Encrypted",
+        "cloud_communication": "Persistent secure session"
+      }
+    }
+  ]
+}
