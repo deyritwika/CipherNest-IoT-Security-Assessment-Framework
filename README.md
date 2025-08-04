@@ -1,7 +1,6 @@
 # 🔒 CipherNest – IoT Security Assessment Framework
 
-CipherNest is a hands-on IoT security assessment project that focuses on **analyzing, visualizing, and reporting the security posture of smart home devices**.  
-This project replicates a real-world security workflow—network reconnaissance, traffic analysis, vulnerability scanning, and dashboard visualization.
+CipherNest is a hands-on IoT security assessment project that focuses on **analyzing, visualizing, and reporting the security posture of smart home devices**.  This project replicates a real-world security workflow network reconnaissance, traffic analysis, vulnerability scanning, and dashboard visualization.
 
 ---
 
@@ -16,10 +15,10 @@ This project replicates a real-world security workflow—network reconnaissance,
 - Device discovery using `ARP` and `mDNS`.
 - TLS handshake and SNI inspection for encryption validation.
 - Port and service enumeration with Nmap.
-- Risk scoring for each device.
+- Risk scoring for device.
 - Interactive **Dash + Plotly dashboard**.
 - Scalable JSON-based data model for adding more devices.
-- Professional report-ready visual captures.
+- Dashboard with Network and Device Data.
 
 ---
 
